@@ -61,7 +61,7 @@ public class Login extends AppCompatActivity {
                 }else
                 {
 
-                    ValidateIds(phone,password);
+                    ValidateIds(phone,password,statusUser);
 
                 }
             }
@@ -76,15 +76,33 @@ public class Login extends AppCompatActivity {
 
     }
 
-    private void ValidateIds(String phone, String password) {
+    private void ValidateIds(String phone, String password,String statusUser) {
         user = Room.databaseBuilder(getApplicationContext(),UserAppDatabase.class,"Laurents").allowMainThreadQueries().build();
 
         User userfile = user.getUserDao().getUser(phone,password);
 if(userfile==null)
 {
     Toast.makeText(getApplicationContext(),"goodbyeee",Toast.LENGTH_LONG).show();
+    return;
 }else
     Toast.makeText(getApplicationContext(),"hello",Toast.LENGTH_LONG).show();
+        if(checkBox.isChecked()){
+            editor.putString("phone",phone);
+            editor.putString("password",password);
+            editor.apply();
+        }
+        if(statusUser == "Admin")
+        {
+            Intent intent =new Intent(Login.this,AdminCategory.class);
+            startActivity(intent);
+        }else
+        {
+            Intent intent =new Intent(Login.this,Home.class);
+            startActivity(intent);
+
+        }
+
+
     }
 
 }

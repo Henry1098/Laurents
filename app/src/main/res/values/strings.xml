@@ -11,6 +11,9 @@
     <string name="creer">Créer compte</string>
     <string name="name">Nom d\'utilisateur</string>
     <string name="ajout">Ajouter nouveau produits</string>
-
+    <string name="select">Sélectionnez l\'image pour charger une nouvelle photo</string>
+    <string name="produit">Nom du produit</string>
+    <string name="description">Description du produit</string>
+    <string name="prix">Prix du produit</string>
 
 </resources>
