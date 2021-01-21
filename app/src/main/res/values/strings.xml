@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Laurent\'s</string>
+    <string name="motto">Trouvez ce que vous recherchez</string>
+    <string name="account">J\'ai déjà un compte, pour se login</string>
+    <string name="join">Rejoignez-nous</string>
+    <string name="phone">Numero de tél.</string>
+    <string name="password">Mot de passe</string>
+    <string name="remember">Remember me</string>
+    <string name="forget">Mot de passe oublié?</string>
+    <string name="admin">Etes-vous administrateur?</string>
+    <string name="creer">Créer compte</string>
+    <string name="name">Nom d\'utilisateur</string>
+    <string name="ajout">Ajouter nouveau produits</string>
+
+
+</resources>

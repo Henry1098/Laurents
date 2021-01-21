@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "298024197303",
+    "project_id": "laurent-s",
+    "storage_bucket": "laurent-s.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298024197303:android:c64f2e1a182bf9894c8132",
+        "android_client_info": {
+          "package_name": "com.example.laurents"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298024197303-lu4lp8mljuii0sck3p0m1553mvm27cvf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKiTnr_DCJHSAkMZ9drjg-nR_D4GQvPXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298024197303-lu4lp8mljuii0sck3p0m1553mvm27cvf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
