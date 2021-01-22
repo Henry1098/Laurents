@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imageProduit"
-        android:layout_width="224dp"
-        android:layout_height="117dp"
+        android:layout_width="273dp"
+        android:layout_height="136dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -67,15 +67,15 @@
         android:layout_height="40dp"
         android:background="@drawable/input"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="number"
         android:text="@string/prix"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageProduit"
-        app:layout_constraintVertical_bias="0.446"
-        android:gravity="center_vertical|center_horizontal"/>
+        app:layout_constraintVertical_bias="0.446" />
 
     <Button
         android:id="@+id/validerProduit"
@@ -84,6 +84,7 @@
         android:background="@color/colorPrimaryDark"
         android:text="@string/ajout"
         android:textColor="@android:color/white"
+        android:padding="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

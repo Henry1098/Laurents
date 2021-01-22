@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private SharedPreferences pref;
     private String mdp,tel;
     private ProgressDialog pdialog;
+    private final static String SHARED_PREFS = "Rememberme";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         buttonjoin = (Button)findViewById(R.id.buttonjoin);
         buttonlogin = (Button)findViewById(R.id.buttonlogin);
         user = Room.databaseBuilder(getApplicationContext(),UserAppDatabase.class,"Laurents").allowMainThreadQueries().build();
-        pref = getApplicationContext().getSharedPreferences("SHARED_PREFS", 0);
+        pref = getApplicationContext().getSharedPreferences(SHARED_PREFS, 0);
         pdialog  = new ProgressDialog(this);
 
         mdp = pref.getString("password","");
@@ -66,11 +67,11 @@ buttonlogin.setOnClickListener(new View.OnClickListener() {
             User user_ = user.getUserDao().getUser(tel,mdp);
             if(user_.getPhone().equals(tel) && user_.getPassword().equals(mdp))
             {
-                Toast.makeText(getApplicationContext(),"helloooo",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,"helloooo",Toast.LENGTH_LONG).show();
                 pdialog.dismiss();
             }else
             {
-                Toast.makeText(getApplicationContext(),"goodbyeee",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,"goodbyeee",Toast.LENGTH_LONG).show();
                 pdialog.dismiss();
             }
 

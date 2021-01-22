@@ -43,7 +43,7 @@ public class Login extends AppCompatActivity {
         statusUser = "User";
 
         pdialog = new ProgressDialog(Login.this);
-        pref = getApplicationContext().getSharedPreferences("SHARED_PREFS", 0);
+        pref = getApplicationContext().getSharedPreferences(SHARED_PREFS, 0);
         editor=pref.edit();
 
         buttonLogin2.setOnClickListener(new View.OnClickListener() {
