@@ -1,2 +1,2 @@
 # Laurents
-Application d'e-commerce Android développé avec ROOM.
+Application d'e-commerce Android pour tablette développé avec ROOM.
